@@ -1,0 +1,23 @@
+.form-field {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+
+    select {
+        width: 100%;
+        max-width: 200px;
+        padding: 10px;
+    }
+
+    input {
+        width: 100%;
+        max-width: 500px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+        cursor: pointer;
+    }
+}

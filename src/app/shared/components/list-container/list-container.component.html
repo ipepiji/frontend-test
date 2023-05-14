@@ -1,0 +1,12 @@
+<div
+  *ngFor="let item of items; let lastItem = last; trackBy: trackById"
+  [class]="'list-container' + (isPost ? ' click' : '')"
+  [style]="{
+    'border-bottom': !lastItem ? 'solid 1px black' : 'none'
+  }"
+  [routerLink]="isPost ? ['/post/' + item.id] : null"
+>
+  <p class="email">{{ item.email || "" }}</p>
+  <p class="title">{{ item.title || item.name }}</p>
+  <p class="description">{{ item.body }}</p>
+</div>

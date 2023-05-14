@@ -1,0 +1,13 @@
+<form [formGroup]="filterForm" (ngSubmit)="onSubmit()" class="form-field">
+  <select formControlName="filterType">
+    <option
+      *ngFor="let filterItem of filterItems; trackBy: trackByValue"
+      [value]="filterItem.value"
+    >
+      {{ filterItem.name }}
+    </option>
+  </select>
+  <input type="text" formControlName="filterInput" placeholder="Search" />
+  <button type="submit" [disabled]="!this.filterForm.valid">Search</button>
+  <button type="button" (click)="resetForm()">Reset</button>
+</form>

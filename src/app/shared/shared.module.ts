@@ -4,8 +4,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
+import { ListContainerComponent } from '@shared/components';
+
+//  Declarations
+const DECLARATIONS = [ListContainerComponent];
+
 //  Exports
 const EXPORTS = [
+  ...DECLARATIONS,
   CommonModule,
   ReactiveFormsModule,
   HttpClientModule,
@@ -13,7 +19,7 @@ const EXPORTS = [
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: DECLARATIONS,
   imports: [CommonModule, RouterModule],
   exports: EXPORTS,
 })

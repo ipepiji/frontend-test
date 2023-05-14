@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="container-title">
+    <div class="container-subtitle">{{ post.title }}</div>
+    <div class="container-title-description">{{ post.body }}</div>
+  </div>
+  <div class="container-content">
+    <div class="container-content-title">
+      <p>Comments</p>
+      <app-comment-filter
+        (filteringEvent)="filterComments($event)"
+      ></app-comment-filter>
+    </div>
+    <app-comment-list [comments]="comments"></app-comment-list>
+  </div>
+</div>

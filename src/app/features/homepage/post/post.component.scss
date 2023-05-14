@@ -1,0 +1,18 @@
+.container {
+    height: 100%;
+    max-width: 1000px;
+    margin: 10px;
+    border: solid 1px black;
+
+    .container-title {
+        padding: 0 20px;
+        border-bottom: inherit;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .container-content {
+        max-height: calc(100vh - 170px);
+        overflow: auto;
+    }
+}
