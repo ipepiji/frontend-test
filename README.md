@@ -18,3 +18,16 @@
 
 - Once completed, send us a screenshot of all screens
 - Make your repo public, and send us the link for us to review
+
+## Screenshots
+
+1. A screen to display all the posts
+
+![Posts page](src/assets/img/screenshots/posts.PNG)
+
+2. A second screen that shows all the comments related to a post
+
+![Post page with all comment](src/assets/img/screenshots/post.PNG)
+
+3. A search box that allows the user to filter the comments related to a post
+![Post page with filtered comments](src/assets/img/screenshots/filter-comment.PNG)
