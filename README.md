@@ -30,4 +30,5 @@
 ![Post page with all comment](src/assets/img/screenshots/post.PNG)
 
 3. A search box that allows the user to filter the comments related to a post
+
 ![Post page with filtered comments](src/assets/img/screenshots/filter-comment.PNG)
